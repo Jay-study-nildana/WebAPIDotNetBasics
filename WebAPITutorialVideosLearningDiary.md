@@ -1,6 +1,6 @@
-# Web API Dot Net Basics
+# Web API Tutorial Videos Learning Diary
 
-supporting repository for the YouTube Tutorial Series
+diary for the code I will be pushing, for the students, and supporting the videos that are being uploaded.
 
 # book a session with me
 
@@ -18,3 +18,7 @@ find ways to hire me, follow me and stay in touch with me.
 1. [stackoverflow](https://stackoverflow.com/users/5338888/jay)
 1. [Jay's Coding Channel](https://www.youtube.com/channel/UCJJVulg4J7POMdX0veuacXw/)
 1. [medium blog](https://medium.com/@vijayasimhabr)
+
+## September 24th 2024
+
+Setting up the repo for the students. Just showing them how to use learning diary. 
