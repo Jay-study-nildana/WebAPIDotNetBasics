@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorMVCWebAppDirectAPIConsumption", "RazorMVCWebAppDirectAPIConsumption\RazorMVCWebAppDirectAPIConsumption.csproj", "{E0500E2F-D764-419C-95BB-F746C3D1FA77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0500E2F-D764-419C-95BB-F746C3D1FA77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0500E2F-D764-419C-95BB-F746C3D1FA77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0500E2F-D764-419C-95BB-F746C3D1FA77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0500E2F-D764-419C-95BB-F746C3D1FA77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {53AF6B54-31D4-4C16-A646-4AF12FE4FFE9}
+	EndGlobalSection
+EndGlobal

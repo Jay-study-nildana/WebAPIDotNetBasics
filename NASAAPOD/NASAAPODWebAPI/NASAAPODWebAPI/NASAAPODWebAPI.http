@@ -1,0 +1,6 @@
+@NASAAPODWebAPI_HostAddress = http://localhost:5025
+
+GET {{NASAAPODWebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
