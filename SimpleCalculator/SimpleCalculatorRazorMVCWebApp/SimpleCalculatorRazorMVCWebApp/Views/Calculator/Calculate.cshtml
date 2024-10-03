@@ -1,0 +1,114 @@
+﻿@using SimpleCalculatorRazorMVCWebApp.DTO
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model NumberInputDto
+
+<h1>Welcome to The Simple Calculator</h1>
+
+<form asp-action="Calculate">
+
+    <div class="row">
+        <div class="col-2">
+            <label class="control-label pt-2" style="font-size:20px">Enter the First Number</label>
+        </div>
+        <div class="col-10 pb-3"> 
+            <input asp-for="firstnumber" class="form-control"/>
+            <span asp-validation-for="firstnumber" class="text-danger"></span>
+        </div>
+        <div class="col-2">
+            <label class="control-label pt-2" style="font-size:20px">Enter the Second Number</label>
+        </div>
+        <div class="col-10 pb-3">
+            <input asp-for="secondnumber" class="form-control" />
+            <span asp-validation-for="secondnumber" class="text-danger"></span>
+        </div>
+
+        <input type="submit" value="Addition" class="btn btn-success form-control" />
+    </div>
+
+
+
+</form>
+
+<form asp-action="CalculateSub">
+
+    <div class="row">
+        <div class="col-2">
+            <label class="control-label pt-2" style="font-size:20px">Enter the First Number</label>
+        </div>
+        <div class="col-10 pb-3">
+            <input asp-for="firstnumber" class="form-control" />
+            <span asp-validation-for="firstnumber" class="text-danger"></span>
+        </div>
+        <div class="col-2">
+            <label class="control-label pt-2" style="font-size:20px">Enter the Second Number</label>
+        </div>
+        <div class="col-10 pb-3">
+            <input asp-for="secondnumber" class="form-control" />
+            <span asp-validation-for="secondnumber" class="text-danger"></span>
+        </div>
+
+        <input type="submit" value="Subtraction" class="btn btn-success form-control" />
+    </div>
+
+
+
+</form>
+
+<form asp-action="CalculateMul">
+
+    <div class="row">
+        <div class="col-2">
+            <label class="control-label pt-2" style="font-size:20px">Enter the First Number</label>
+        </div>
+        <div class="col-10 pb-3">
+            <input asp-for="firstnumber" class="form-control" />
+            <span asp-validation-for="firstnumber" class="text-danger"></span>
+        </div>
+        <div class="col-2">
+            <label class="control-label pt-2" style="font-size:20px">Enter the Second Number</label>
+        </div>
+        <div class="col-10 pb-3">
+            <input asp-for="secondnumber" class="form-control" />
+            <span asp-validation-for="secondnumber" class="text-danger"></span>
+        </div>
+
+        <input type="submit" value="Multiplication" class="btn btn-success form-control" />
+    </div>
+
+
+
+</form>
+
+<form asp-action="CalculateDiv">
+
+    <div class="row">
+        <div class="col-2">
+            <label class="control-label pt-2" style="font-size:20px">Enter the First Number</label>
+        </div>
+        <div class="col-10 pb-3">
+            <input asp-for="firstnumber" class="form-control" />
+            <span asp-validation-for="firstnumber" class="text-danger"></span>
+        </div>
+        <div class="col-2">
+            <label class="control-label pt-2" style="font-size:20px">Enter the Second Number</label>
+        </div>
+        <div class="col-10 pb-3">
+            <input asp-for="secondnumber" class="form-control" />
+            <span asp-validation-for="secondnumber" class="text-danger"></span>
+        </div>
+
+        <input type="submit" value="Division" class="btn btn-success form-control" />
+    </div>
+
+
+
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
