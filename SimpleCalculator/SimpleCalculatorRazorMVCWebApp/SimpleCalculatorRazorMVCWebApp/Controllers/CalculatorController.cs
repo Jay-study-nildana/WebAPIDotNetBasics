@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using APICaller;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.VisualBasic;
 using Newtonsoft.Json;
 using SimpleCalculatorRazorMVCWebApp.DTO;
@@ -23,26 +24,12 @@ namespace SimpleCalculatorRazorMVCWebApp.Controllers
             var fullurl = "https://localhost:7083/api/Calculator/AddTwoNumbers";
             var requestbody = JsonConvert.SerializeObject(numberInputDto);
 
-            using (var http = new HttpClient())
-            using (var request = new  HttpRequestMessage())
-            {
-                //build the request
-                request.Method = HttpMethod.Post;
-                request.RequestUri = new Uri(fullurl);
-                request.Content = new StringContent(requestbody, Encoding.UTF8, "application/json");//,Encoding.UTF8, "application/json"
-                //request.Headers.Add("Accept", "application/json");
+            var EPHelper = new EndPointHelper();
+            var result = await EPHelper.One(fullurl, requestbody);
 
-                //let's collect the response
-                HttpResponseMessage response = await http.SendAsync(request).ConfigureAwait(false);
-                string result = await response.Content.ReadAsStringAsync();
+            TempData["calculateresultstring"] = result;
 
-                TempData["calculateresultstring"] = result;
-
-                return RedirectToAction(nameof(CalculateResult));
-            }
-
-            //return RedirectToAction(nameof(CalculateResult));
-            //return View();
+            return RedirectToAction(nameof(CalculateResult));
         }
 
         [HttpPost]
@@ -51,26 +38,12 @@ namespace SimpleCalculatorRazorMVCWebApp.Controllers
             var fullurl = "https://localhost:7083/api/Calculator/SubTwoNumbers";
             var requestbody = JsonConvert.SerializeObject(numberInputDto);
 
-            using (var http = new HttpClient())
-            using (var request = new HttpRequestMessage())
-            {
-                //build the request
-                request.Method = HttpMethod.Post;
-                request.RequestUri = new Uri(fullurl);
-                request.Content = new StringContent(requestbody, Encoding.UTF8, "application/json");//,Encoding.UTF8, "application/json"
-                //request.Headers.Add("Accept", "application/json");
+            var EPHelper = new EndPointHelper();
+            var result = await EPHelper.One(fullurl, requestbody);
 
-                //let's collect the response
-                HttpResponseMessage response = await http.SendAsync(request).ConfigureAwait(false);
-                string result = await response.Content.ReadAsStringAsync();
+            TempData["calculateresultstring"] = result;
 
-                TempData["calculateresultstring"] = result;
-
-                return RedirectToAction(nameof(CalculateResult));
-            }
-
-            //return RedirectToAction(nameof(CalculateResult));
-            //return View();
+            return RedirectToAction(nameof(CalculateResult));
         }
 
         [HttpPost]
@@ -79,26 +52,12 @@ namespace SimpleCalculatorRazorMVCWebApp.Controllers
             var fullurl = "https://localhost:7083/api/Calculator/MultiplyTwoNumbers";
             var requestbody = JsonConvert.SerializeObject(numberInputDto);
 
-            using (var http = new HttpClient())
-            using (var request = new HttpRequestMessage())
-            {
-                //build the request
-                request.Method = HttpMethod.Post;
-                request.RequestUri = new Uri(fullurl);
-                request.Content = new StringContent(requestbody, Encoding.UTF8, "application/json");//,Encoding.UTF8, "application/json"
-                //request.Headers.Add("Accept", "application/json");
+            var EPHelper = new EndPointHelper();
+            var result = await EPHelper.One(fullurl, requestbody);
 
-                //let's collect the response
-                HttpResponseMessage response = await http.SendAsync(request).ConfigureAwait(false);
-                string result = await response.Content.ReadAsStringAsync();
+            TempData["calculateresultstring"] = result;
 
-                TempData["calculateresultstring"] = result;
-
-                return RedirectToAction(nameof(CalculateResult));
-            }
-
-            //return RedirectToAction(nameof(CalculateResult));
-            //return View();
+            return RedirectToAction(nameof(CalculateResult));
         }
 
         [HttpPost]
@@ -107,26 +66,12 @@ namespace SimpleCalculatorRazorMVCWebApp.Controllers
             var fullurl = "https://localhost:7083/api/Calculator/DivideTwoNumbers";
             var requestbody = JsonConvert.SerializeObject(numberInputDto);
 
-            using (var http = new HttpClient())
-            using (var request = new HttpRequestMessage())
-            {
-                //build the request
-                request.Method = HttpMethod.Post;
-                request.RequestUri = new Uri(fullurl);
-                request.Content = new StringContent(requestbody, Encoding.UTF8, "application/json");//,Encoding.UTF8, "application/json"
-                //request.Headers.Add("Accept", "application/json");
+            var EPHelper = new EndPointHelper();
+            var result = await EPHelper.One(fullurl, requestbody);
 
-                //let's collect the response
-                HttpResponseMessage response = await http.SendAsync(request).ConfigureAwait(false);
-                string result = await response.Content.ReadAsStringAsync();
+            TempData["calculateresultstring"] = result;
 
-                TempData["calculateresultstring"] = result;
-
-                return RedirectToAction(nameof(CalculateResult));
-            }
-
-            //return RedirectToAction(nameof(CalculateResult));
-            //return View();
+            return RedirectToAction(nameof(CalculateResult));
         }
 
         public IActionResult CalculateResult()

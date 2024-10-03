@@ -1,27 +1,26 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SimpleCalculatorWebAPI.DTO;
-using SimpleCalculatorWebAPI.Interfaces;
 
 namespace SimpleCalculatorWebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CalculatorController : ControllerBase
+    public class CalculateOldController : ControllerBase
     {
-        private ResponseDto _responseDto { get; set; }
-        private IMathOperations mathOperations { get; set; }
 
-        public CalculatorController() { 
+        private ResponseDto _responseDto { get; set; }
+
+        public CalculateOldController()
+        {
             _responseDto = new ResponseDto();
-            mathOperations = new MathOperationsOne();
         }
 
         [HttpPost]
         [Route("AddTwoNumbers")]
         public ResponseDto AddTwoNumbers(NumberInputDto numberInputDto)
         {
-            double result = mathOperations.Add(numberInputDto.firstnumber, numberInputDto.secondnumber);
+            double result = numberInputDto.firstnumber + numberInputDto.secondnumber;
 
             _responseDto.Result = result;
             _responseDto.Message = "Addition operation was successfull";
@@ -33,7 +32,7 @@ namespace SimpleCalculatorWebAPI.Controllers
         [Route("SubTwoNumbers")]
         public ResponseDto SubTwoNumbers(NumberInputDto numberInputDto)
         {
-            double result = mathOperations.Sub(numberInputDto.firstnumber, numberInputDto.secondnumber);
+            double result = numberInputDto.firstnumber - numberInputDto.secondnumber;
 
             _responseDto.Result = result;
             _responseDto.Message = "Subtraction operation was successfull";
@@ -45,7 +44,7 @@ namespace SimpleCalculatorWebAPI.Controllers
         [Route("MultiplyTwoNumbers")]
         public ResponseDto MultiplyTwoNumbers(NumberInputDto numberInputDto)
         {
-            double result = mathOperations.Mul(numberInputDto.firstnumber, numberInputDto.secondnumber);
+            double result = numberInputDto.firstnumber * numberInputDto.secondnumber;
 
             _responseDto.Result = result;
             _responseDto.Message = "Multiply operation was successfull";
@@ -57,7 +56,7 @@ namespace SimpleCalculatorWebAPI.Controllers
         [Route("DivideTwoNumbers")]
         public ResponseDto DivideTwoNumbers(NumberInputDto numberInputDto)
         {
-            double result = mathOperations.Div(numberInputDto.firstnumber, numberInputDto.secondnumber);
+            double result = numberInputDto.firstnumber / numberInputDto.secondnumber;
 
             if (double.IsInfinity(result) || double.IsNaN(result))
             {
