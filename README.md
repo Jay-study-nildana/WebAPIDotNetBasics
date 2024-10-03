@@ -2,8 +2,9 @@
 
 supporting repository for the YouTube Tutorial Series
 
-1. YouTube Playlist of tutorials : [https://www.youtube.com/playlist?list=PL7SHzFbuSdW28WLl_2xRbIQf_4ZrWSrqU](https://www.youtube.com/playlist?list=PL7SHzFbuSdW28WLl_2xRbIQf_4ZrWSrqU)
+1. YouTube Playlist Web API Dot Net Basics: [https://www.youtube.com/playlist?list=PL7SHzFbuSdW28WLl_2xRbIQf_4ZrWSrqU](https://www.youtube.com/playlist?list=PL7SHzFbuSdW28WLl_2xRbIQf_4ZrWSrqU)
 1. Learning Diary : [WebAPITutorialVideosLearningDiary.md](WebAPITutorialVideosLearningDiary.md)
+1. YouTube Playlist - C Sharp Dot Net Basics - [https://www.youtube.com/playlist?list=PL7SHzFbuSdW1D8WPy7sNpHQ1l5WUWZaNP](https://www.youtube.com/playlist?list=PL7SHzFbuSdW1D8WPy7sNpHQ1l5WUWZaNP)
 
 # Folders
 

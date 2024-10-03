@@ -6,6 +6,7 @@ Project built to show simple input and output with a calculator theme
 
 1. [SimpleCalculatorConsoleProject](SimpleCalculatorConsoleProject)
 1. [SimpleCalculatorWebAPI](SimpleCalculatorWebAPI)
+1. [SimpleCalculatorRazorMVCWebApp](SimpleCalculatorRazorMVCWebApp)
 
 # book a session with me
 
