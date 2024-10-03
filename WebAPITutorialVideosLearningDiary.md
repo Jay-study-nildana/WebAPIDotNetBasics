@@ -21,6 +21,14 @@ find ways to hire me, follow me and stay in touch with me.
 1. [Jay's Coding Channel](https://www.youtube.com/channel/UCJJVulg4J7POMdX0veuacXw/)
 1. [medium blog](https://medium.com/@vijayasimhabr)
 
+## October 3rd 2024
+
+Building the Simple Calculator. 
+
+SimpleCalculatorConsoleProject
+SimpleCalculatorWebAPI
+SimpleCalculatorRazorMVCWebApp
+
 ## September 26th 2024
 
 Building a console app using https://api.nasa.gov/.

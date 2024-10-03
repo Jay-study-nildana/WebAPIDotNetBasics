@@ -2,11 +2,13 @@
 
 supporting repository for the YouTube Tutorial Series
 
-YouTube Playlist of tutorials : [https://www.youtube.com/playlist?list=PL7SHzFbuSdW28WLl_2xRbIQf_4ZrWSrqU](https://www.youtube.com/playlist?list=PL7SHzFbuSdW28WLl_2xRbIQf_4ZrWSrqU)
-Learning Diary : [WebAPITutorialVideosLearningDiary.md](WebAPITutorialVideosLearningDiary.md)
+1. YouTube Playlist of tutorials : [https://www.youtube.com/playlist?list=PL7SHzFbuSdW28WLl_2xRbIQf_4ZrWSrqU](https://www.youtube.com/playlist?list=PL7SHzFbuSdW28WLl_2xRbIQf_4ZrWSrqU)
+1. Learning Diary : [WebAPITutorialVideosLearningDiary.md](WebAPITutorialVideosLearningDiary.md)
+
 # Folders
 
 1. [NASAAPOD](NASAAPOD) - Projects built in order to consume the NASA API service. 
+1. [SimpleCalculator](SimpleCalculator) - Project built to show simple input and output with a calculator theme
 
 # book a session with me
 

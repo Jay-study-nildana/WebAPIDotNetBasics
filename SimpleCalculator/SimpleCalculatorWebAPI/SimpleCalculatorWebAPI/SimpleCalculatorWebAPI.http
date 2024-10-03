@@ -1,0 +1,6 @@
+@SimpleCalculatorWebAPI_HostAddress = http://localhost:5288
+
+GET {{SimpleCalculatorWebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
